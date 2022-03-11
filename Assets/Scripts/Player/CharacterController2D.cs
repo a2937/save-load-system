@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // This script is a basic 2D character controller that allows
 // the player to run and jump.
@@ -51,7 +52,7 @@ public class CharacterController2D : MonoBehaviour, IDataPersistence
         this.transform.position = data.playerPosition;
     }
 
-    public void SaveData(ref GameData data) 
+    public void SaveData( GameData data) 
     {
         data.playerPosition = this.transform.position;
     }

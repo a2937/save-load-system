@@ -7,6 +7,7 @@ public class GameData
 {
     public int deathCount;
     public Vector3 playerPosition;
+    public string LastScene; 
     public SerializableDictionary<string, bool> coinsCollected;
 
     // the values defined in this constructor will be the default values
@@ -14,6 +15,7 @@ public class GameData
     public GameData() 
     {
         this.deathCount = 0;
+        LastScene = "";
         playerPosition = Vector3.zero;
         coinsCollected = new SerializableDictionary<string, bool>();
     }
